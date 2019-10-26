@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John",
+      "date": "05-06-2018",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "Patric",
+      "date": "08-10-2019",
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "name": "Ann",
+      "date": "14-06-2023",
+      "status": "inactive"
+    },
+    {
+      "id": 4,
+      "name": "Mary",
+      "date": "22-03-2019",
+      "status": "inactive"
+    }
+  ]
+}
