@@ -1,27 +1,27 @@
 {
-  "users": [
+  "data": [
     {
       "id": 1,
       "name": "John",
-      "date": "05-06-2018",
+      "date": "2019-04-12",
       "status": "active"
     },
     {
       "id": 2,
       "name": "Patric",
-      "date": "08-10-2019",
+      "date": "2018-06-25",
       "status": "active"
     },
     {
       "id": 3,
       "name": "Ann",
-      "date": "14-06-2023",
+      "date": "2019-12-23",
       "status": "inactive"
     },
     {
       "id": 4,
       "name": "Mary",
-      "date": "22-03-2019",
+      "date": "2019-08-02",
       "status": "inactive"
     }
   ]
