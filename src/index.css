@@ -5,13 +5,39 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 25px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.table, table td {
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+table, table td, table th {
   border: 1px solid;
   border-collapse: collapse;
+}
+table th {
+  cursor: pointer;
+  user-select: none;
+}
+select {
+  height: 22px;
+}
+.name-field {
+  width: 150px;
+  display: inline-block;
+}
+.name-field span {
+  width: 100%;
+  display: inline-block;
+}
+.name-field input {
+  width: 99px;
+  border: none;
+  font-size: 16px;
 }
