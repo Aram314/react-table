@@ -1,15 +1,23 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {fetchUsers, sort} from "./usersActions";
+import {fetchUsers, sort, sort1} from "./usersActions";
 
 class Users extends React.Component {
     constructor(props) {
         super(props);
+        this.customSort = this.customSort.bind(this);
     }
 
 
     componentDidMount() {
         this.props.dispatch(fetchUsers())
+    }
+
+    customSort() {
+        this.sorted = this.props.users.data;
+        this.sorted = [{data:[{id:52,name:'asdf',date:'2012-08-05',status:'active'}]}];
+        console.log(this.sorted,'sorted array');
+        return(this.sorted)
     }
 
     render() {
@@ -29,7 +37,7 @@ class Users extends React.Component {
         <table className="table">
             <thead>
             <tr>
-                <th>Index</th>
+                <th onClick={this.props.dispatch(sort1(this.customSort()))}>Index</th>
                 <th>Name</th>
                 <th>Date</th>
                 <th>Status</th>

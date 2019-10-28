@@ -42,3 +42,10 @@ export const sort = (sortedUsers) => {
         payload: { sortedUsers }
     }
 };
+
+export const sort1 = (sortedUsers) => {
+    return {
+        type: SORT,
+        payload: { sortedUsers }
+    }
+}
