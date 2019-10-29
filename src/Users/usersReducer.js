@@ -87,7 +87,7 @@ export default function usersReducer(state = initialState, action) {
         case SET_STATUS:
             return {
                 ...state,
-                status: action.payload.status,
+                status: '',
                 items: {data: state.items.data.map(item => {
                     if(item.checked) {
                         return {
